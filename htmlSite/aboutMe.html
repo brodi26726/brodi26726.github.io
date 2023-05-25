@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        #buttons {
+            border: 1px black solid;
+            max-width: fit;
+            background-color: #CBD18F;
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: space-evenly;
+
+
+        }
+
+        #intro {
+            color: white;
+        }
+
+        .aboutMe {
+            border: 1px black solid;
+            text-align: left;
+            color: #000;
+            background-color: #ADD8E6;
+            position: sticky;
+            top: 0;
+        }
+
+        .gamePlay {
+            border: 1px black solid;
+            text-align: center;
+            color: #000;
+            background-color: #ADD8E6;
+            position: sticky;
+            top: 0;
+        }
+
+        .learned {
+            border: 1px black solid;
+            text-align: right;
+            color: #000;
+            background-color: #ADD8E6;
+            position: sticky;
+            top: 0;
+        }
+
+        * {
+            background-color: #3A6B35;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+
+        img {
+            border: 3px black dashed;
+        }
+
+        #buttercup {
+            height: 288px;
+            width: 384px;
+            margin-bottom: 50px;
+        }
+
+        #gunner {
+            height: 384px;
+            width: 288px;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: white;
+        }
+
+        @media only screen and (max-width: 1200px) {
+            .aboutMe {
+                font-size: 20px;
+            }
+
+            .gamePlay {
+                font-size: 20px;
+            }
+
+            .learned {
+                font-size: 20px;
+            }
+        }
+
+        @media only screen and (max-width: 750px) {
+            .aboutMe {
+                font-size: 12px;
+            }
+
+            .gamePlay {
+                font-size: 12px;
+            }
+
+            .learned {
+                font-size: 12px;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .aboutMe {
+                font-size: 10px;
+            }
+
+            .gamePlay {
+                font-size: 10px;
+            }
+
+            .learned {
+                font-size: 10px;
+            }
+            #intro .image {
+                display: none;
+            }
+
+        }
+        #gameButtonChange {
+            background-color: #CBD18F ;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        <div id="buttons">
+            <a href="aboutMe.html" class="aboutMe">About Me</a>
+            <div id="gameButtonChange"><a href="gettoschool\www\game.html" class="gamePlay">Press to play Game</a></div>
+            <a href="programming.html" class="learned">What I Learned In Programming 2023</a>
+        </div>
+    </h1>
+    <div id="intro">
+        <p>My name is Brodie Tipton.</p>
+        <h2>I'm bald</h2>
+        <div class="image">
+            <img src="bald.png" alt="Bald">
+        </div>
+        <p>I currently go to York Tech for Information Technology.</p>
+        <div class="image">
+            <img src="tech.png" alt="York Tech Logo">
+        </div>
+        <p>I have 2 dogs, both very big.</p>
+        <div class="images">
+            <img src="dog.JPG" alt="Dog" id="buttercup">
+            <img src="dog2.JPG" alt="Dog" id="gunner">
+        </div>
+        <p>I have glasses, they help me see.</p>
+    </div>
+</body>
+
+</html>

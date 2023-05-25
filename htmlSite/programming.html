@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Class</title>
+    <style>
+        #buttons {
+            border: 1px black solid;
+            max-width: fit;
+            background-color: #CBD18F;
+            position: sticky;
+            display: flex;
+            justify-content: space-evenly;
+
+
+        }
+
+        #learning {
+            color: white;
+        }
+
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        #gamePara {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            margin-top: 300px;
+        }
+
+        .aboutMe {
+            border: 1px black solid;
+            text-align: left;
+            color: #000;
+            background-color: #ADD8E6;
+        }
+
+        .gamePlay {
+            border: 1px black solid;
+            text-align: center;
+            color: #000;
+            background-color: #ADD8E6;
+        }
+
+        .learned {
+            border: 1px black solid;
+            text-align: right;
+            color: #000;
+            background-color: #ADD8E6;
+        }
+
+        .acronym {
+            font-size: 36px;
+            text-align: center;
+        }
+
+        .acronymNot {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .button:hover {
+            background-color: #000;
+            color: white;
+            font-size: 56px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+
+        }
+
+        button {
+            background-color: white;
+            color: black;
+            border: 2px solid #555555;
+            font-size: 56px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 12px;
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+        }
+
+        #whatAreThey {
+            font-size: 16px;
+            text-align: center;
+        }
+        img {
+            height: 423px;
+            width: 579px;
+            display: block;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: white;
+        }
+
+        @media only screen and (max-width: 1200px) {
+            .aboutMe {
+                font-size: 20px;
+            }
+
+            .gamePlay {
+                font-size: 20px;
+            }
+
+            .learned {
+                font-size: 20px;
+            }
+        }
+
+        @media only screen and (max-width: 750px) {
+            .aboutMe {
+                font-size: 12px;
+            }
+
+            .gamePlay {
+                font-size: 12px;
+            }
+
+            .learned {
+                font-size: 12px;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .aboutMe {
+                font-size: 10px;
+            }
+
+            .gamePlay {
+                font-size: 10px;
+            }
+
+            .learned {
+                font-size: 10px;
+            }
+            button {
+                display: none;
+            }
+        }
+
+        table {
+            border: 3px black solid;
+        }
+
+        th {
+            border: 2px black solid;
+        }
+
+        td {
+            border: 2px black solid;
+        }
+
+        * {
+            background-color: #3A6B35;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #gameButtonChange {
+            background-color: #CBD18F ;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>
+        <div id="buttons">
+            <a href="aboutMe.html" class="aboutMe">About Me</a>
+            <div id="gameButtonChange"><a href="gettoschool\www\game.html" class="gamePlay">Press to play Game</a></div>
+            <a href="programming.html" class="learned">What I Learned In Programming 2023</a>
+        </div>
+    </h1>
+    <div id="learning">
+        <p class="center">In programming this year, we learned about a couple different languages. </p>
+        <table class="center">
+            <tr>
+                <th>
+                    <div class="acronym">HTML</div>
+                </th>
+                <th>
+                    <div class="acronym">JS</div>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="acronymNot">Hypertext Markup Language</div>
+                </td>
+                <td>
+                    <div class="acronymNot">JavaScript</div>
+                </td>
+            </tr>
+            <tr>
+
+                <td>
+                    <div id="whatAreThey">HTML is the standard programming language for the World Wide Web.</div>
+                </td>
+                <td>
+                    <div id="whatAreThey">JavaScript is used to add iteraction to the HTML.</div>
+                </td>
+
+            </tr>
+        </table>
+        <p class="center">We also worked on a game called RPG Maker, where we learned how to make a game while following
+            flow charts.</p>
+        <script>
+            function arrow() {
+                document.getElementById("gameButtonChange").style.border = '10px #FF0000 solid';
+            }
+        </script>
+        <button onclick="arrow()" class="button">SEE?</button>
+        <p class="center"><div id="gamePara"> We learned how to make flow charts, like the one we made here for turning in papers.</div></p>
+        <div id="image"><img src="chart3.png" alt="chart" class="center"></div>
+    </div>
+</body>
+
+</html>
